@@ -1,11 +1,4 @@
 {
-    "repositories": [
-    {
-        "type": "vcs",
-        "url": "https://github.com/rahulabs/laravel-form-components",
-        "no-api": true
-    }
-],
     "name": "protonemedia/laravel-form-components",
     "description": "Blade components to rapidly build forms with Tailwind CSS Custom Forms and Bootstrap 4.",
     "keywords": [
