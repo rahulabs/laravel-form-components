@@ -18,13 +18,13 @@
         "laravel-form-builder",
         "laravel-form-components"
     ],
-    "homepage": "https://github.com/protonemedia/laravel-form-components",
+    "homepage": "https://github.com/rahulabs/laravel-form-components",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
-            "name": "Pascal Baljet",
-            "email": "pascal@protone.media",
+            "name": "Rahul Oberai",
+            "email": "roberoi.abstain@gmail.com",
             "role": "Developer"
         }
     ],
