@@ -2,7 +2,7 @@
     "name": "rahulabs/laravel-form-components",
     "description": "Blade components to rapidly build forms with Tailwind CSS Custom Forms and Bootstrap 4.",
     "keywords": [
-        "protonemedia",
+        "rahulabs",
         "tailwind",
         "tailwindcss",
         "bootstrap",
@@ -44,12 +44,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ProtoneMedia\\LaravelFormComponents\\": "src"
+            "RahulAbs\\LaravelFormComponents\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ProtoneMedia\\LaravelFormComponents\\Tests\\": "tests"
+            "RahulAbs\\LaravelFormComponents\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -64,7 +64,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ProtoneMedia\\LaravelFormComponents\\Support\\ServiceProvider"
+                "RahulAbs\\LaravelFormComponents\\Support\\ServiceProvider"
             ]
         }
     }
