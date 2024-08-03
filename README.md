@@ -2,10 +2,10 @@
 
 # Laravel Form Components
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/protonemedia/laravel-form-components.svg?style=flat-square)](https://packagist.org/packages/protonemedia/laravel-form-components)
-[![Build Status](https://img.shields.io/travis/protonemedia/laravel-form-components/master.svg?style=flat-square)](https://travis-ci.org/protonemedia/laravel-form-components)
-[![Total Downloads](https://img.shields.io/packagist/dt/protonemedia/laravel-form-components.svg?style=flat-square)](https://packagist.org/packages/protonemedia/laravel-form-components)
-[![Buy us a tree](https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen)](https://plant.treeware.earth/protonemedia/laravel-form-components)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/rahulabs/laravel-form-components.svg?style=flat-square)](https://packagist.org/packages/rahulabs/laravel-form-components)
+[![Build Status](https://img.shields.io/travis/rahulabs/laravel-form-components/master.svg?style=flat-square)](https://travis-ci.org/rahulabs/laravel-form-components)
+[![Total Downloads](https://img.shields.io/packagist/dt/rahulabs/laravel-form-components.svg?style=flat-square)](https://packagist.org/packages/rahulabs/laravel-form-components)
+[![Buy us a tree](https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen)](https://plant.treeware.earth/rahulabs/laravel-form-components)
 
 A set of Blade components to rapidly build forms with [Tailwind CSS v1](https://tailwindcss-custom-forms.netlify.app), [Tailwind CSS v2](https://tailwindcss-forms.vercel.app), [Bootstrap 4](https://getbootstrap.com/docs/4.0/components/forms/) and [Bootstrap 5](https://getbootstrap.com/docs/5.1/forms/overview/). Supports validation, model binding, default values, translations, includes default vendor styling and fully customizable!
 
@@ -17,7 +17,7 @@ A set of Blade components to rapidly build forms with [Tailwind CSS v1](https://
 
 **Did you hear about Laravel Splade? 🤩**
 
-It's the *magic* of Inertia.js with the *simplicity* of Blade. [Splade](https://github.com/protonemedia/laravel-splade) provides a super easy way to build Single Page Applications using Blade templates. Besides that magic SPA-feeling, it comes with more than ten components to sparkle your app and make it interactive, all without ever leaving Blade.
+It's the *magic* of Inertia.js with the *simplicity* of Blade. [Splade](https://github.com/rahulabs/laravel-splade) provides a super easy way to build Single Page Applications using Blade templates. Besides that magic SPA-feeling, it comes with more than ten components to sparkle your app and make it interactive, all without ever leaving Blade.
 
 ## Features
 
@@ -48,7 +48,7 @@ It's the *magic* of Inertia.js with the *simplicity* of Blade. [Splade](https://
 You can install the package via composer:
 
 ```bash
-composer require protonemedia/laravel-form-components
+composer require rahulabs/laravel-form-components
 ```
 
 If you're using Tailwind, make sure the right plugin ([v1](https://github.com/tailwindcss/custom-forms#install) or [v2](https://github.com/tailwindlabs/tailwindcss-forms#installation)) is installed and configured.
@@ -82,7 +82,7 @@ If you're using Tailwind, make sure the right plugin ([v1](https://github.com/ta
 </x-form>
 ```
 
-<img src="https://github.com/protonemedia/laravel-form-components/blob/master/quick-example-form.png?raw=true" width="450"  alt="Quick example form"/>
+<img src="https://github.com/rahulabs/laravel-form-components/blob/master/quick-example-form.png?raw=true" width="450"  alt="Quick example form"/>
 
 ## Preface
 
@@ -421,14 +421,14 @@ To get the validation errors from the session, the name of the input will be map
 Publish the configuration file and Blade views with the following command:
 
 ```bash
-php artisan vendor:publish --provider="ProtoneMedia\LaravelFormComponents\Support\ServiceProvider"
+php artisan vendor:publish --provider="rahulabs\LaravelFormComponents\Support\ServiceProvider"
 ```
 
 You can find the Blade views in the `resources/views/vendor/form-components` folder. Optionally, in the `form-components.php` configuration file, you can change the location of the Blade view *per* component.
 
 #### Component logic
 
-You can bind your own component classes to any of the elements. In the `form-components.php` configuration file, you can change the class *per* component. As the logic for the components is quite complex, it is strongly recommended to duplicate the default component as a starting point and start editing. You'll find the default component classes in the `vendor/protonemedia/laravel-form-components/src/Components` folder.
+You can bind your own component classes to any of the elements. In the `form-components.php` configuration file, you can change the class *per* component. As the logic for the components is quite complex, it is strongly recommended to duplicate the default component as a starting point and start editing. You'll find the default component classes in the `vendor/rahulabs/laravel-form-components/src/Components` folder.
 
 ### Prefix the components
 
@@ -555,15 +555,15 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Other Laravel packages
 
-* [`Laravel Analytics Event Tracking`](https://github.com/protonemedia/laravel-analytics-event-tracking): Laravel package to easily send events to Google Analytics.
-* [`Laravel Blade On Demand`](https://github.com/protonemedia/laravel-blade-on-demand): Laravel package to compile Blade templates in memory.
-* [`Laravel Cross Eloquent Search`](https://github.com/protonemedia/laravel-cross-eloquent-search): Laravel package to search through multiple Eloquent models.
-* [`Laravel Eloquent Scope as Select`](https://github.com/protonemedia/laravel-eloquent-scope-as-select): Stop duplicating your Eloquent query scopes and constraints in PHP. This package lets you re-use your query scopes and constraints by adding them as a subquery.
-* [`Laravel Eloquent Where Not`](https://github.com/protonemedia/laravel-eloquent-where-not): This Laravel package allows you to flip/invert an Eloquent scope, or really any query constraint.
-* [`Laravel FFMpeg`](https://github.com/protonemedia/laravel-ffmpeg): This package provides an integration with FFmpeg for Laravel. The storage of the files is handled by Laravel's Filesystem.
-* [`Laravel Paddle`](https://github.com/protonemedia/laravel-paddle): Paddle.com API integration for Laravel with support for webhooks/events.
-* [`Laravel Verify New Email`](https://github.com/protonemedia/laravel-verify-new-email): This package adds support for verifying new email addresses: when a user updates its email address, it won't replace the old one until the new one is verified.
-* [`Laravel WebDAV`](https://github.com/protonemedia/laravel-webdav): WebDAV driver for Laravel's Filesystem.
+* [`Laravel Analytics Event Tracking`](https://github.com/rahulabs/laravel-analytics-event-tracking): Laravel package to easily send events to Google Analytics.
+* [`Laravel Blade On Demand`](https://github.com/rahulabs/laravel-blade-on-demand): Laravel package to compile Blade templates in memory.
+* [`Laravel Cross Eloquent Search`](https://github.com/rahulabs/laravel-cross-eloquent-search): Laravel package to search through multiple Eloquent models.
+* [`Laravel Eloquent Scope as Select`](https://github.com/rahulabs/laravel-eloquent-scope-as-select): Stop duplicating your Eloquent query scopes and constraints in PHP. This package lets you re-use your query scopes and constraints by adding them as a subquery.
+* [`Laravel Eloquent Where Not`](https://github.com/rahulabs/laravel-eloquent-where-not): This Laravel package allows you to flip/invert an Eloquent scope, or really any query constraint.
+* [`Laravel FFMpeg`](https://github.com/rahulabs/laravel-ffmpeg): This package provides an integration with FFmpeg for Laravel. The storage of the files is handled by Laravel's Filesystem.
+* [`Laravel Paddle`](https://github.com/rahulabs/laravel-paddle): Paddle.com API integration for Laravel with support for webhooks/events.
+* [`Laravel Verify New Email`](https://github.com/rahulabs/laravel-verify-new-email): This package adds support for verifying new email addresses: when a user updates its email address, it won't replace the old one until the new one is verified.
+* [`Laravel WebDAV`](https://github.com/rahulabs/laravel-webdav): WebDAV driver for Laravel's Filesystem.
 
 ### Security
 
@@ -571,7 +571,7 @@ If you discover any security related issues, please email pascal@protone.media i
 
 ## Credits
 
-- [Pascal Baljet](https://github.com/protonemedia)
+- [Pascal Baljet](https://github.com/rahulabs)
 - [All Contributors](../../contributors)
 
 ## License
