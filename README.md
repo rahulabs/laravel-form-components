@@ -39,7 +39,7 @@ It's the *magic* of Inertia.js with the *simplicity* of Blade. [Splade](https://
 ## Requirements
 
 * PHP 8.0 or higher
-* Laravel 9.0
+* Laravel 9.0 or higher
 
 ## Installation
 
