@@ -1,6 +1,6 @@
 <?php
 
-use ProtoneMedia\LaravelFormComponents\Components;
+use RahulAbs\LaravelFormComponents\Components;
 
 return [
     'prefix' => '',
