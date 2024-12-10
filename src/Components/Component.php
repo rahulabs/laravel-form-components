@@ -1,6 +1,6 @@
 <?php
 
-namespace ProtoneMedia\LaravelFormComponents\Components;
+namespace RahulAbs\LaravelFormComponents\Components;
 
 use Illuminate\Support\Str;
 use Illuminate\View\Component as BaseComponent;
