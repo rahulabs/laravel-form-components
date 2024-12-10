@@ -1,6 +1,6 @@
 <?php
 
-namespace ProtoneMedia\LaravelFormComponents\Support;
+namespace RahulAbs\LaravelFormComponents\Support;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Blade;
