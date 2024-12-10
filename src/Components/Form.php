@@ -1,6 +1,6 @@
 <?php
 
-namespace ProtoneMedia\LaravelFormComponents\Components;
+namespace RahulAbs\LaravelFormComponents\Components;
 
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ViewErrorBag;
