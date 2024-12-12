@@ -1,10 +1,10 @@
 <?php
 
-namespace ProtoneMedia\LaravelFormComponents\Tests\Feature;
+namespace RahulAbs\LaravelFormComponents\Tests\Feature;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\View;
-use ProtoneMedia\LaravelFormComponents\Tests\TestCase;
+use RahulAbs\LaravelFormComponents\Tests\TestCase;
 
 class DateTimeCastTest extends TestCase
 {

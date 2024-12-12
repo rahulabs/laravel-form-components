@@ -1,8 +1,8 @@
 @php
-    $targetA = new \ProtoneMedia\LaravelFormComponents\Tests\Feature\TranslatableModel;
+    $targetA = new \RahulAbs\LaravelFormComponents\Tests\Feature\TranslatableModel;
     $targetA->setTranslations('input', ['nl' => 'hallo', 'en' => 'hello']);
 
-    $targetB = new \ProtoneMedia\LaravelFormComponents\Tests\Feature\TranslatableModel;
+    $targetB = new \RahulAbs\LaravelFormComponents\Tests\Feature\TranslatableModel;
     $targetB->setTranslations('output', ['nl' => 'vaarwel', 'en' => 'goodbye']);
 @endphp
 

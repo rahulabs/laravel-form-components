@@ -1,9 +1,9 @@
 <?php
 
-namespace ProtoneMedia\LaravelFormComponents\Tests\Feature;
+namespace RahulAbs\LaravelFormComponents\Tests\Feature;
 
 use Illuminate\Http\Request;
-use ProtoneMedia\LaravelFormComponents\Tests\TestCase;
+use RahulAbs\LaravelFormComponents\Tests\TestCase;
 
 class RadioTest extends TestCase
 {

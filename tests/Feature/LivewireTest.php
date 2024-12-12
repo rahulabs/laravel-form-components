@@ -1,10 +1,10 @@
 <?php
 
-namespace ProtoneMedia\LaravelFormComponents\Tests\Feature;
+namespace RahulAbs\LaravelFormComponents\Tests\Feature;
 
 use Livewire\Component;
 use Livewire\Livewire;
-use ProtoneMedia\LaravelFormComponents\Tests\TestCase;
+use RahulAbs\LaravelFormComponents\Tests\TestCase;
 
 class FormComponent extends Component
 {

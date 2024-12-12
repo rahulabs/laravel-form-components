@@ -1,8 +1,8 @@
 <?php
 
-namespace ProtoneMedia\LaravelFormComponents\Tests\Feature;
+namespace RahulAbs\LaravelFormComponents\Tests\Feature;
 
-use ProtoneMedia\LaravelFormComponents\Tests\TestCase;
+use RahulAbs\LaravelFormComponents\Tests\TestCase;
 
 class Bootstrap4Test extends TestCase
 {

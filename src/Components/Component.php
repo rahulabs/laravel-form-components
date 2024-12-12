@@ -4,7 +4,7 @@ namespace RahulAbs\LaravelFormComponents\Components;
 
 use Illuminate\Support\Str;
 use Illuminate\View\Component as BaseComponent;
-use ProtoneMedia\LaravelFormComponents\FormDataBinder;
+use RahulAbs\LaravelFormComponents\FormDataBinder;
 
 abstract class Component extends BaseComponent
 {
