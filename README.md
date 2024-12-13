@@ -419,7 +419,7 @@ To get the validation errors from the session, the name of the input will be map
 Publish the configuration file and Blade views with the following command:
 
 ```bash
-php artisan vendor:publish --provider="rahulabs\LaravelFormComponents\Support\ServiceProvider"
+php artisan vendor:publish --provider="RahulAbs\LaravelFormComponents\Support\ServiceProvider"
 ```
 
 You can find the Blade views in the `resources/views/vendor/form-components` folder. Optionally, in the `form-components.php` configuration file, you can change the location of the Blade view *per* component.
