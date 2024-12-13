@@ -1,4 +1,4 @@
-@if($floating) <div class="form-floating"> @endif
+@if($floating) <div class="mb-3 form-floating"> @endif
 
     @if(!$floating)
         <x-form-label :label="$label" :for="$attributes->get('id') ?: $id()" />
@@ -27,7 +27,7 @@
     >
 
         @if($placeholder)
-            <option value="" disabled @if($nothingSelected()) selected="selected" @endif>
+            <option value="" @if($nothingSelected()) selected="selected" @endif>
                 {{ $placeholder }}
             </option>
         @endif
@@ -40,15 +40,19 @@
             {!! $slot !!}
         @endforelse
     </select>
-
+    {!! $help ?? null !!}
     @if($floating)
         <x-form-label :label="$label" :for="$attributes->get('id') ?: $id()" />
     @endif
 
-@if($floating) </div> @endif
+@if($floating)
+        @if($hasErrorAndShow($name))
+            <x-form-errors :name="$name" />
+        @endif
+</div> @endif
 
-{!! $help ?? null !!}
 
-@if($hasErrorAndShow($name))
+
+@if(!$floating && $hasErrorAndShow($name))
     <x-form-errors :name="$name" />
 @endif

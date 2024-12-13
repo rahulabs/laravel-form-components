@@ -1,5 +1,5 @@
 @if($type === 'hidden') <div class="d-none"> @endif
-@if($floating) <div class="form-floating"> @endif
+@if($floating) <div class="mb-3 form-floating"> @endif
 
     @if(!$floating)
         <x-form-label :label="$label" :for="$attributes->get('id') ?: $id()" />
@@ -7,7 +7,7 @@
 
     <input
         {!! $attributes->merge(['class' => 'form-control' . ($type === 'color' ? ' form-control-color' : '') . ($hasError($name) ? ' is-invalid' : '')]) !!}
-
+        autocomplete="off"
         type="{{ $type }}"
 
         @if($isWired())
@@ -31,12 +31,16 @@
     @if($floating)
         <x-form-label :label="$label" :for="$attributes->get('id') ?: $id()" />
     @endif
+        {!! $help ?? null !!}
+@if($floating)
+            @if($hasErrorAndShow($name))
+                <x-form-errors :name="$name" />
+            @endif
+    </div> @endif
 
-@if($floating) </div> @endif
 
-{!! $help ?? null !!}
 
-@if($hasErrorAndShow($name))
+@if(!$floating && $hasErrorAndShow($name))
     <x-form-errors :name="$name" />
 @endif
 

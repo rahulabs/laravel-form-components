@@ -1,36 +1,35 @@
-@if($floating) <div class="form-floating"> @endif
+<div >
+    @if($floating) <div class="form-floating mb-3"> @endif
 
-    @if(!$floating)
-        <x-form-label :label="$label" :for="$attributes->get('id') ?: $id()" />
-    @endif
+        @if(!$floating)
+            <x-form-label :label="$label" :for="$attributes->get('id') ?: $id()" />
+        @endif
 
-    <textarea
-        @if($isWired())
+        <textarea
+            @if($isWired())
             wire:model{!! $wireModifier() !!}="{{ $name }}"
-        @endif
+            @endif
 
-        name="{{ $name }}"
+            name="{{ $name }}"
 
-        @if($label && !$attributes->get('id'))
+            @if($label && !$attributes->get('id'))
             id="{{ $id() }}"
-        @endif
+            @endif
 
-        {{--  Placeholder is required as of writing  --}}
-        @if($floating && !$attributes->get('placeholder'))
+            {{--  Placeholder is required as of writing  --}}
+            @if($floating && !$attributes->get('placeholder'))
             placeholder="&nbsp;"
         @endif
 
-        {!! $attributes->merge(['class' => 'form-control' . ($hasError($name) ? ' is-invalid' : '')]) !!}
+            {!! $attributes->merge(['class' => 'form-control' . ($hasError($name) ? ' is-invalid' : '')]) !!}
     >@unless($isWired()){!! $value !!}@endunless</textarea>
 
-    @if($floating)
-        <x-form-label :label="$label" :for="$attributes->get('id') ?: $id()" />
-    @endif
-
-@if($floating) </div> @endif
-
-{!! $help ?? null !!}
-
-@if($hasErrorAndShow($name))
-    <x-form-errors :name="$name" />
-@endif
+        @if($floating)
+            <x-form-label :label="$label" :for="$attributes->get('id') ?: $id()" />
+        @endif
+        {!! $help ?? null !!}
+        @if($hasErrorAndShow($name))
+            <x-form-errors :name="$name" />
+        @endif
+        @if($floating) </div> @endif
+</div>

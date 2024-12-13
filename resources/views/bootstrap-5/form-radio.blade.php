@@ -1,10 +1,6 @@
 <div class="form-check @if(null !== $attributes->get('inline')) form-check-inline @endif">
     <input
-        {!! $attributes->merge(['class' => 'form-check-input' . ($hasError($name) ? ' is-invalid' : '')]) !!}
-
-        type="radio"
-
-        value="{{ $value }}"
+        {!! $attributes->merge(['class' => 'form-check-input' . ($hasError($name) ? ' is-invalid' : '')]) !!} type="radio" value="{{ $value }}"
 
         @if($isWired())
             wire:model{!! $wireModifier() !!}="{{ $name }}"
@@ -20,9 +16,7 @@
             checked="checked"
         @endif
     />
-
-    <x-form-label :label="$label" :for="$attributes->get('id') ?: $id()" class="form-check-label" />
-
+    <x-form-label :icon1="$attributes->get('icon1') ?? null" :icon2="$attributes->get('icon2') ?? null" :label="$label" :for="$attributes->get('id') ?: $id()" class="form-check-label" />
     {!! $help ?? null !!}
 
     @if($hasErrorAndShow($name))
